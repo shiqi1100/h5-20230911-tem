@@ -22,6 +22,8 @@ type P = keyof Kevin
 
 const arr = [1,2,3,4,5] // todo
 
+const obj = {name: '测试'}
+
 function changeObjValue<T, U extends Extract<keyof T, string>>(obj: T, value: U) {
   return obj[value]
 }
